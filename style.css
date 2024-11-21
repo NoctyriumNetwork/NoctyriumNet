@@ -1,0 +1,458 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8000ff;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    cursor: default;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #8000ff;
+  }
+  
+  .cta-button {
+    background-color: #8000ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #5c00b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  }
+
+  /* What's new section */
+  .whats-new {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .whats-new h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8000ff;
+  }
+  
+  .news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .news-card {
+    background-color: #1c1c2e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .news-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .news-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #cccccc;
+  }
+  
+  .news-card .read-more {
+    text-decoration: none;
+    color: #8000ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .news-card .read-more:hover {
+    color: #5c00b3;
+  }
+  
+  .news-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .news-card {
+      width: 100%;
+    }
+  }
+/* Services Section */
+.services {
+    background-color: #121212; /* Same as "What's New" */
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8000ff;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .service-item {
+    background-color: #1c1c2e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #cccccc;
+  }
+  
+  .service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/* Contact Us Section */
+/* Contact Us Section */
+.contact-us {
+    background-color: #121212; /* Dark background to match the rest */
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact-container {
+    background-color: transparent; /* No background color */
+    color: #ffffff; /* Keep text white */
+    max-width: 600px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 30px; /* Inner spacing */
+    border: 3px solid #ffffff; /* White border */
+    border-radius: 15px; /* Rounded corners */
+  }
+  
+  .contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8000ff; /* Purple color for the heading */
+  }
+  
+  .contact-us p {
+    font-size: 1rem;
+    color: #cccccc; /* Slightly lighter text color */
+  }
+  
+  .contact-us a {
+    color: #8000ff; /* Purple link color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-us a:hover {
+    color: #5c00b3; /* Darker purple on hover */
+  }
+  
+/* Footer */
+.footer {
+    background-color: #121212; /* Matches the other sections */
+    color: #cccccc;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer h3 {
+    color: #8000ff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .footer-links {
+    margin: 10px 0 20px;
+  }
+  
+  .footer-links a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .footer-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #999999;
+    border-top: 1px solid #333333;
+    padding-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer h3 {
+      font-size: 1.2rem;
+    }
+  
+    .footer-links img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+
+  /*Contact Desing */
+  /* Contact Form Container */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: none;
+    border-radius: 12px; /* More rounded corners */
+    background-color: #1f1f1f; /* Slightly darker background for contrast */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+}
+
+/* Heading Styles */
+.contact-form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 32px; /* Larger font size for better visibility */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px; /* Added extra margin for spacing */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Input, Select, Textarea Styles */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 8px; /* More rounded corners */
+    background-color: #333;
+    color: #fff;
+    font-size: 16px; /* Increased font size for readability */
+    transition: border-color 0.3s ease;
+}
+
+/* Focus Styles for Inputs */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #8000ff; /* Purple border for focus state */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #8000ff; /* Changed to a purple color */
+    border: none;
+    border-radius: 50px; /* Rounded button corners */
+    color: #fff;
+    font-size: 18px; /* Larger font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; /* Added margin to separate from form inputs */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #6600cc; /* Darker purple for hover */
+    transform: translateY(-2px); /* Slight lift on hover for interactivity */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    .contact-form-container h1 {
+        font-size: 28px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px; /* Adjusted font size for mobile devices */
+    }
+
+    button {
+        font-size: 16px; /* Smaller font size for buttons on mobile */
+    }
+}
+
+/* Join Us */ 
+/* Join Us Section */
+.join-us {
+    background-color: #121212;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.join-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #8000ff;
+}
+
+.join-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.join-option {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.join-option h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.join-option p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8000ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #5c00b3;
+}
