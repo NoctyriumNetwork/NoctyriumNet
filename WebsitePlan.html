@@ -22,9 +22,10 @@
   </header>
   <br>
   <br>
-  <!-- Sign Up -->
-  <div class="contact-form-container">
-    <h1>Sign Up - Membership</h1>
+  <!-- Choose Plan -->
+   <!-- Contact Form -->
+   <div class="contact-form-container">
+    <h1>Bot Development - Package</h1>
     <form id="membership-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="8f16a80a-b31f-4d04-9636-7a1665f87ad6">
         <div class="form-group">
@@ -36,16 +37,13 @@
             <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
-            <label for="message">Exclusive Access - Time</label>
+            <label for="message">Contacting Reason</label>
            <select id="message" name="message" required>
-                <option value="" disabled selected>Choose Plan</option>
-                   <option value="Per Month - $4.99">Per Month - $4.99 - Popular</option>
-                    <option value="Per year - $49.99">Per year - $49.99</option>
+                <option value="" disabled selected>Choose Package</option>
+                   <option value="Basic - €9.99/project">Basic - €9.99/project</option>
+                    <option value="Standard - €19.99/project">Standard - €19.99/project</option>
+                    <option value="Premium - €24.99/project">Premium - €24.99/project</option>
                 </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
             </div>
             <input type="hidden" name="redirect" value="">
             <button type="submit">Submit</button>
@@ -76,4 +74,5 @@
     </div>
   </footer>
 </body>
+<script src="app.js"></script>
 </html>

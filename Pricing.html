@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noctyrium Network</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Noctyrium.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar Section -->
+  <header class="navbar">
+    <div class="logo">Noctyrium Network</div>
+    <nav class="nav-links">
+      <a href="Index.html">Home</a>
+      <a href="WhatsNew.html">What's New</a>
+      <a href="Services.html">Our Services</a>
+      <a href="Pricing.html">Pricing</a>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+    <a class="cta-button" href="JoinUs.html">Join Now</a>
+  </header>
+  <!-- Price -->
+    <header class="header">
+      <h1>Noctyrium Pricing Plans</h1>
+      <p>Explore our services and pricing tiers.</p>
+    </header>
+  
+    <main>
+      <!-- Network Solutions Section -->
+      <section class="pricing-category">
+        <h2>Network Solutions</h2>
+        <p class="availability">*Still not available*</p>
+        <div class="pricing">
+          <div class="plan">
+            <h3>Starter</h3>
+            <p class="price">€9.99/month</p>
+            <ul>
+              <li>Good Host</li>
+              <li>Always Up</li>
+              <li>1 month of our support</li>
+            </ul>
+            <a href="Pricing.html" class="btn disabled">Not Available</a>
+          </div>
+          <div class="plan">
+            <h3>Professional</h3>
+            <p class="price">€29.99/month</p>
+            <ul>
+              <li>Awesome Host</li>
+              <li>Always Up</li>
+              <li>6 months of our support</li>
+            </ul>
+            <a href="Pricing.html" class="btn disabled">Not Available</a>
+          </div>
+          <div class="plan">
+            <h3>Enterprise</h3>
+            <p class="price">€49.99/month</p>
+            <ul>
+              <li>Best Host</li>
+              <li>Always Up</li>
+              <li>1 year of our support</li>
+            </ul>
+            <a href="Pricing.html" class="btn disabled">Not Available</a>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Web Development Section -->
+      <section class="pricing-category">
+        <h2>Web Development</h2>
+        <div class="pricing">
+          <div class="plan">
+            <h3>Basic</h3>
+            <p class="price">€24.99/project</p>
+            <ul>
+              <li>Max 5 Pages</li>
+              <li>Responsive Design</li>
+              <li>Basic Support</li>
+            </ul>
+            <a href="WebsitePlan.html" class="btn">Select Plan</a>
+          </div>
+          <div class="plan">
+            <h3>Standard</h3>
+            <p class="price">€49.99/project</p>
+            <ul>
+              <li>Max 10 Pages</li>
+              <li>Responsive Design</li>
+              <li>Advanced Support</li>
+            </ul>
+            <a href="WebsitePlan.html" class="btn">Select Plan</a>
+          </div>
+          <div class="plan">
+            <h3>Premium</h3>
+            <p class="price">€74.99/project</p>
+            <ul>
+              <li>Max 20 Pages</li>
+              <li>Responsive Design</li>
+              <li>Priority Support</li>
+            </ul>
+            <a href="WebsitePlan.html" class="btn">Select Plan</a>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Discord Bot Development Section -->
+      <section class="pricing-category">
+        <h2>Discord Bot Development</h2>
+        <div class="pricing">
+          <div class="plan">
+            <h3>Starter Bot</h3>
+            <p class="price">Free</p>
+            <ul>
+              <li>3 Commands</li>
+              <li>Basic Setup</li>
+              <li>Lifetime Support</li>
+            </ul>
+            <a href="BotPlan.html" class="btn">Select Plan</a>
+          </div>
+          <div class="plan">
+            <h3>Advanced Bot</h3>
+            <p class="price">€4.99 - 45% Off Sale</p>
+            <ul>
+              <li>10 Commands</li>
+              <li>Our Custom Setup</li>
+              <li>Lifetime Support</li>
+            </ul>
+            <a href="BotPlan.html" class="btn">Select Plan</a>
+          </div>
+          <div class="plan">
+            <h3>Ultimate Bot</h3>
+            <p class="price">€19.99 - 45% Off Sale</p>
+            <ul>
+              <li>Unlimited Commands</li>
+              <li>Custom Host - Not Available</li>
+              <li>Lifetime Support</li>
+            </ul>
+            <a href="BotPlan.html" class="btn">Select Plan</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  <style>
+    /* General Styling */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header.header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #6ac06a;
+}
+
+header.header h1 {
+  color: #6ac06a;
+  font-size: 2.5rem;
+}
+
+header.header p {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Pricing Category Section */
+.pricing-category {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  border: 1px solid #6ac06a;
+  border-radius: 10px;
+}
+
+.pricing-category h2 {
+  color: #6ac06a;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center; /* Center the label */
+}
+
+
+.pricing-category .availability {
+  font-style: italic;
+  color: #999999;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Pricing Cards */
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.plan {
+  background-color: #1f1f1f;
+  border: 1px solid #6ac06a;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.plan h3 {
+  color: #6ac06a;
+  font-size: 1.5rem;
+}
+
+.plan .price {
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan ul li {
+  margin: 5px 0;
+  color: white;
+}
+
+.plan .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #6ac06a;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.plan .btn:hover {
+  background-color: #3e773e;
+}
+
+.plan .btn.disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+  color: #999999;
+}
+
+  </style>
+  
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Noctyrium Network Links</h3>
+      <div class="footer-links">
+        <a href="https://x.com/NoctyriumNet" target="_blank" aria-label="Twitter">
+          <img src="X_logo.jpg" alt="Twitter (X)">
+        </a>
+        <a href="https://www.youtube.com/@NoctyriumNetwork" target="_blank" aria-label="YouTube">
+          <img src="Youtube-removebg-preview.png" alt="YouTube">
+        </a>
+        <a href="https://discord.gg/z3vYqKDwzQ" target="_blank" aria-label="Discord">
+          <img src="discord.jpg" alt="Discord">
+        </a>
+        <a href="https://www.roblox.com/groups/17276758/Noctyrium#!/about" target="_blank" aria-label="Roblox Group">
+          <img src="RBLX.jpg" alt="Roblox Group">
+        </a>
+      </div>
+      <div class="speciallinks">
+        <a href="terms.html">Terms & Privacy Policy</a>
+      </div>
+      <p>&copy; 2024 Noctyrium Network. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="app.js"></script>
+</html>

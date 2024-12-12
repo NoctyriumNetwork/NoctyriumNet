@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noctyrium Network</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Noctyrium.png" type="image/x-icon">
+  <style>
+    /* Add custom animations */
+    .question {
+      display: none;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .question.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Optional styling for smoother transition */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    /* Style for submit button */
+    button[type="submit"] {
+      margin-top: 20px;
+      background-color: #408140;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #2f4b2f;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <header class="navbar">
+    <div class="logo">Noctyrium Network</div>
+    <nav class="nav-links">
+      <a href="Index.html">Home</a>
+      <a href="WhatsNew.html">What's New</a>
+      <a href="Services.html">Our Services</a>
+      <a href="Pircing.html">Pircing</a>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+    <a class="cta-button" href="JoinUs.html">Join Now</a>
+  </header>
+  <br>
+  <br>
+
+  <!-- Contact Form -->
+<div class="contact-form-container">
+    <h1>Contact Form</h1>
+    <form id="membership-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="8f16a80a-b31f-4d04-9636-7a1665f87ad6">
+  
+      <!-- Question 1: What's your email? -->
+      <div class="form-group question show" id="question1">
+        <label for="email">What's your email?</label>
+        <input type="email" id="email" name="email" required>
+        <button type="button" onclick="nextQuestion(1)">Continue</button>
+      </div>
+  
+      <!-- Question 2: What's your name? -->
+      <div class="form-group question" id="question2">
+        <label for="name">What's your name?</label>
+        <input type="text" id="name" name="name" required>
+        <button type="button" onclick="nextQuestion(2)">Continue</button>
+      </div>
+  
+      <!-- Question 3: What’s your company name? -->
+      <div class="form-group question" id="question3">
+        <label for="company-name">What’s your company name? (Optional)</label>
+        <input type="text" id="company-name" name="company-name">
+        <button type="button" onclick="nextQuestion(3)">Continue</button>
+      </div>
+  
+      <!-- Question 4: What is your company about? -->
+      <div class="form-group question" id="question4">
+        <label for="company-about">What is your company about?</label>
+        <textarea id="company-about" name="company-about" rows="4"></textarea>
+        <button type="button" onclick="nextQuestion(4)">Continue</button>
+      </div>
+  
+      <!-- Question 5: What services are you interested in? -->
+      <div class="form-group question" id="question5">
+        <label for="services">What services are you interested in?</label>
+        <select id="services" name="services" required>
+          <option value="" disabled selected>Select Services</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Bot Development">Bot Development</option>
+          <option value="Network Solutions">Network Solutions</option>
+        </select>
+        <button type="button" onclick="nextQuestion(5)">Continue</button>
+      </div>
+  
+      <!-- Question 6: How did you hear about us? -->
+      <div class="form-group question" id="question6">
+        <label for="hear-about-us">How did you hear about us?</label>
+        <select id="hear-about-us" name="hear-about-us" required>
+          <option value="" disabled selected>Choose one</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Referral">Google Search</option>
+          <option value="Advertisement">Advertisement</option>
+        </select>
+        <button type="button" onclick="nextQuestion(6)">Continue</button>
+      </div>
+  
+      <!-- Question 7: What is your main goal for your company/project? -->
+      <div class="form-group question" id="question7">
+        <label for="main-goal">What is your main goal for your company/project?</label>
+        <textarea id="main-goal" name="main-goal" rows="4"></textarea>
+        <button type="button" onclick="nextQuestion(7)">Continue</button>
+      </div>
+  
+      <!-- Question 8: What's your preferred method of contact? -->
+      <div class="form-group question" id="question8">
+        <label for="contact-method">What’s your preferred method of contact?</label>
+        <label><input type="radio" name="contact-method" value="Email" required> Email</label>
+        <label><input type="radio" name="contact-method" value="Discord Community"> Discord Community</label>
+        <button type="button" onclick="nextQuestion(8)">Continue</button>
+      </div>
+  
+      <!-- Question 9: How soon are you looking to get started? -->
+      <div class="form-group question" id="question9">
+        <label for="get-started">How soon are you looking to get started?</label>
+        <label><input type="radio" name="get-started" value="Immediately" required> Immediately</label>
+        <label><input type="radio" name="get-started" value="In a week"> In a week</label>
+        <label><input type="radio" name="get-started" value="In a month"> In a month</label>
+        <label><input type="radio" name="get-started" value="Just exploring"> Just exploring</label>
+        <button type="button" onclick="nextQuestion(9)">Continue</button>
+      </div>
+  
+      <!-- Question 10: Do you have any additional notes or questions? -->
+      <div class="form-group question" id="question10">
+        <label for="additional-notes">Do you have any additional notes or questions?</label>
+        <textarea id="additional-notes" name="additional-notes" rows="4"></textarea>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Noctyrium Network Links</h3>
+      <div class="footer-links">
+        <a href="https://x.com/NoctyriumNet" target="_blank" aria-label="Twitter">
+          <img src="X_logo.jpg" alt="Twitter (X)">
+        </a>
+        <a href="https://www.youtube.com/@NoctyriumNetwork" target="_blank" aria-label="YouTube">
+          <img src="Youtube-removebg-preview.png" alt="YouTube">
+        </a>
+        <a href="https://discord.gg/z3vYqKDwzQ" target="_blank" aria-label="Discord">
+          <img src="discord.jpg" alt="Discord">
+        </a>
+        <a href="https://www.roblox.com/groups/17276758/Noctyrium#!/about" target="_blank" aria-label="Roblox Group">
+          <img src="RBLX.jpg" alt="Roblox Group">
+        </a>
+      </div>
+      <div class="speciallinks">
+        <a href="terms.html">Terms & Privacy Policy</a>
+      </div>
+      <p>&copy; 2024 Noctyrium Network. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="getStarted.js"></script>
+</html>

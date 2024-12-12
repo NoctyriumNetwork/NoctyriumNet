@@ -25,7 +25,7 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #8000ff;
+    color: #8fff8f;
     transition: transform 0.3s ease;
   }
   
@@ -48,11 +48,11 @@
   }
   
   .nav-links a:hover {
-    color: #8000ff;
+    color: #8fff8f;
   }
   
   .cta-button {
-    background-color: #8000ff;
+    background-color: #68b868;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -60,10 +60,11 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
   }
   
   .cta-button:hover {
-    background-color: #5c00b3;
+    background-color: #508f50;
   }
   
   /* Responsive Design */
@@ -77,6 +78,51 @@
     }
   }
 
+  /* Hero Section */
+.hero {
+  background-image: url('WebBanner.png'); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  padding-left: 50px; /* Add padding for better positioning */
+  color: #ffffff; /* White text color */
+}
+
+.hero-content {
+  max-width: 500px; /* Control width of text */
+}
+
+.hero h1 {
+  font-size: 3.5rem; /* Big text */
+  margin-bottom: 15px;
+  color: #ffffff; /* White text */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Small text */
+  margin-bottom: 20px;
+  color: #dddddd; /* Light gray text */
+}
+
+.hero .get-started {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #68be68; /* Purple button */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .get-started:hover {
+  background-color: #3e723e; /* Darker purple on hover */
+}
+
+
   /* What's new section */
   .whats-new {
     background-color: #121212;
@@ -88,7 +134,7 @@
   .whats-new h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: #8000ff;
+    color: #8fff8f;
   }
   
   .news-container {
@@ -128,13 +174,13 @@
   
   .news-card .read-more {
     text-decoration: none;
-    color: #8000ff;
+    color: #60a560;
     font-weight: bold;
     transition: color 0.3s ease;
   }
   
   .news-card .read-more:hover {
-    color: #5c00b3;
+    color: #3a693a;
   }
   
   .news-card:hover {
@@ -159,7 +205,7 @@
   .services h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: #8000ff;
+    color: #8fff8f;
   }
   
   .services-grid {
@@ -200,7 +246,67 @@
       grid-template-columns: 1fr;
     }
   }
-/* Contact Us Section */
+/* About Us Section */
+.about-us {
+  background-color: #121212; /* Dark black background */
+  color: #ffffff; /* White text */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  color: #8fff8f; /* Purple title */
+  margin-bottom: 15px;
+}
+
+.about-us .tagline {
+  font-size: 1.2rem;
+  color: #cccccc; /* Light gray for tagline */
+  margin-bottom: 25px;
+}
+
+.about-us .about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-us .about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #dddddd; /* Soft gray for readability */
+}
+
+.about-us .button-container {
+  text-align: center; /* Center the button container */
+  margin-top: 20px;
+}
+
+.about-us .about-content {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Ensure text is centered */
+}
+
+.about-us .learn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #59a159; /* Purple button */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space above the button */
+}
+
+.about-us .learn-more:hover {
+  background-color: #3d6d3d; /* Darker purple on hover */
+}
+
 /* Contact Us Section */
 .contact-us {
     background-color: #121212; /* Dark background to match the rest */
@@ -222,7 +328,7 @@
   .contact-us h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #8000ff; /* Purple color for the heading */
+    color: #8fff8f; /* Purple color for the heading */
   }
   
   .contact-us p {
@@ -231,75 +337,93 @@
   }
   
   .contact-us a {
-    color: #8000ff; /* Purple link color */
+    color: #6fc56f; /* Purple link color */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .contact-us a:hover {
-    color: #5c00b3; /* Darker purple on hover */
+    color: #477e47; /* Darker purple on hover */
   }
   
 /* Footer */
 .footer {
-    background-color: #121212; /* Matches the other sections */
-    color: #cccccc;
-    padding: 30px 20px;
-    text-align: center;
-  }
-  
-  .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
+  background-color: #121212; /* Matches the other sections */
+  color: #cccccc;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  color: #8fff8f; /* Green for heading */
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  margin: 10px 0 20px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.footer-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #999999;
+  border-top: 1px solid #333333;
+  padding-top: 10px;
+}
+
+/* Special Links Section */
+.speciallinks a {
+  display: inline-block;
+  color: #6ac06a; /* Green color for the special link */
+  font-size: 1rem;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.speciallinks a:hover {
+  color: #8fff8f; /* Slightly lighter green on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer h3 {
-    color: #8000ff;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  
-  .footer-links {
-    margin: 10px 0 20px;
-  }
-  
-  .footer-links a {
-    margin: 0 15px;
-    display: inline-block;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .footer-links a:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-  
+
   .footer-links img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
-  
-  .footer p {
-    margin-top: 20px;
+
+  .speciallinks a {
     font-size: 0.9rem;
-    color: #999999;
-    border-top: 1px solid #333333;
-    padding-top: 10px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer h3 {
-      font-size: 1.2rem;
-    }
-  
-    .footer-links img {
-      width: 25px;
-      height: 25px;
-    }
-  }
-  
+}
 
   /*Contact Desing */
   /* Contact Form Container */
@@ -353,7 +477,7 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #8000ff; /* Purple border for focus state */
+    border-color: #8fff8f; /* Purple border for focus state */
     outline: none;
 }
 
@@ -361,7 +485,7 @@
 button {
     width: 100%;
     padding: 15px;
-    background-color: #8000ff; /* Changed to a purple color */
+    background-color: #61ad61; /* Changed to a purple color */
     border: none;
     border-radius: 50px; /* Rounded button corners */
     color: #fff;
@@ -373,7 +497,7 @@ button {
 
 /* Button Hover Effect */
 button:hover {
-    background-color: #6600cc; /* Darker purple for hover */
+    background-color: #2d632d; /* Darker purple for hover */
     transform: translateY(-2px); /* Slight lift on hover for interactivity */
 }
 
@@ -410,7 +534,7 @@ button:hover {
 .join-us h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #8000ff;
+    color: #8fff8f;
 }
 
 .join-options {
@@ -444,7 +568,7 @@ button:hover {
 .join-button {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #8000ff;
+    background-color: #6ac06a;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -454,5 +578,5 @@ button:hover {
 }
 
 .join-button:hover {
-    background-color: #5c00b3;
+    background-color: #3e773e;
 }
